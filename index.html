@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>站点已部署</title>
+<meta name="description" content="开箱即用的静态站点，支持 Vercel / Cloudflare Pages / GitHub Pages / Docker 一键上线">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="./">◆ YourBrand</a>
+    <nav>
+      <a href="#features">能力</a>
+      <a href="#showcase">展示</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">● 已就绪 · 可一键上线</span>
+    <h1>你的站点，<em>已经能跑了</em></h1>
+    <p>纯静态、零依赖、秒开。配套的部署配置已全部写好，选一个平台，几分钟内拿到公网 HTTPS 地址。</p>
+    <div class="cta">
+      <a class="btn primary" href="#features">看看能做什么</a>
+      <a class="btn ghost" href="#deploy">部署方式</a>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="sec">
+  <div class="wrap">
+    <h2>开箱就有</h2>
+    <div class="grid">
+      <div class="card"><div class="ico">⚡</div><h3>极速加载</h3><p>无框架无打包，纯 HTML/CSS，首屏毫秒级渲染。</p></div>
+      <div class="card"><div class="ico">📱</div><h3>移动优先</h3><p>响应式布局，手机、平板、桌面自动适配。</p></div>
+      <div class="card"><div class="ico">🎨</div><h3>易改易换</h3><p>所有配色集中在 CSS 变量里，改一行换全站风格。</p></div>
+      <div class="card"><div class="ico">🚀</div><h3>四平台通用</h3><p>Vercel、Cloudflare、GitHub Pages、Docker 配置齐备。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="showcase" class="sec alt">
+  <div class="wrap">
+    <h2>部署后你会得到</h2>
+    <div class="grid two">
+      <div class="card"><h3>🔒 自动 HTTPS</h3><p>四个平台均自动签发证书，无需手动配置 SSL。</p></div>
+      <div class="card"><h3>🌍 全球加速</h3><p>CDN 边缘节点分发，国内海外访问都快。</p></div>
+      <div class="card"><h3>🔄 推送即更新</h3><p>关联 Git 仓库后，push 代码自动触发重新部署。</p></div>
+      <div class="card"><h3>🆓 零成本起步</h3><p>三个托管平台都有免费额度，个人项目足够用。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="deploy" class="sec">
+  <div class="wrap">
+    <h2>部署方式</h2>
+    <div class="grid two">
+      <div class="card mono"><h3>Vercel</h3><pre>npx vercel deploy --prod</pre></div>
+      <div class="card mono"><h3>Cloudflare Pages</h3><pre>npx wrangler pages deploy .</pre></div>
+      <div class="card mono"><h3>GitHub Pages</h3><pre>git push origin main</pre></div>
+      <div class="card mono"><h3>Docker</h3><pre>docker compose up -d</pre></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec alt">
+  <div class="wrap center">
+    <h2>准备好上线了吗</h2>
+    <p>选一个平台，把这段命令粘贴进终端即可。</p>
+    <a class="btn primary" href="./">回到顶部</a>
+  </div>
+</section>
+
+<footer><div class="wrap"><p>© 2026 YourBrand · 由沙盒构建并通过本地验证</p></div></footer>
+<script src="./assets/app.js"></script>
+</body>
+</html>
