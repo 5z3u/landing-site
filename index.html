@@ -3,79 +3,151 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>站点已部署</title>
-<meta name="description" content="开箱即用的静态站点，支持 Vercel / Cloudflare Pages / GitHub Pages / Docker 一键上线">
+<title>5z3u · 开发者主页</title>
+<meta name="description" content="5z3u 的开发者主页 —— 静态站点、部署实践与 Android 终端防护项目展示。">
 <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-<header class="nav">
+
+<header class="nav" id="nav">
   <div class="wrap">
-    <a class="logo" href="./">◆ YourBrand</a>
-    <nav>
-      <a href="#features">能力</a>
-      <a href="#showcase">展示</a>
+    <a class="logo" href="./"><span class="dot"></span>5z3u</a>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+    <nav id="navLinks">
+      <a href="#projects">项目</a>
+      <a href="#stack">技术栈</a>
+      <a href="#about">关于</a>
       <a href="#contact">联系</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
+  <div class="glow"></div>
   <div class="wrap">
-    <span class="badge">● 已就绪 · 可一键上线</span>
-    <h1>你的站点，<em>已经能跑了</em></h1>
-    <p>纯静态、零依赖、秒开。配套的部署配置已全部写好，选一个平台，几分钟内拿到公网 HTTPS 地址。</p>
+    <span class="badge"><i class="pulse"></i> 在线 · 部署于 GitHub Pages</span>
+    <h1>你好，我是 <em>5z3u</em><br>做站、部署、折腾到底</h1>
+    <p class="lead">
+      专注静态站点构建与自动化部署，也做 Android 端的终端防护工具。
+      这里汇集了我所有公开项目的入口。
+    </p>
     <div class="cta">
-      <a class="btn primary" href="#features">看看能做什么</a>
-      <a class="btn ghost" href="#deploy">部署方式</a>
+      <a class="btn primary" href="#projects">看看项目</a>
+      <a class="btn" href="https://github.com/5z3u" target="_blank" rel="noopener">GitHub 主页</a>
     </div>
+
+    <ul class="stats">
+      <li><b data-count="6">6</b><span>公开仓库</span></li>
+      <li><b data-count="5">5</b><span>已部署站点</span></li>
+      <li><b data-count="100">100</b><span>% 静态托管</span></li>
+    </ul>
   </div>
 </section>
 
-<section id="features" class="sec">
+<section id="projects" class="sec">
   <div class="wrap">
-    <h2>开箱就有</h2>
+    <h2 class="sec-title">项目</h2>
+    <p class="sec-sub">全部开源，点击卡片直达仓库或线上预览。</p>
+
     <div class="grid">
-      <div class="card"><div class="ico">⚡</div><h3>极速加载</h3><p>无框架无打包，纯 HTML/CSS，首屏毫秒级渲染。</p></div>
-      <div class="card"><div class="ico">📱</div><h3>移动优先</h3><p>响应式布局，手机、平板、桌面自动适配。</p></div>
-      <div class="card"><div class="ico">🎨</div><h3>易改易换</h3><p>所有配色集中在 CSS 变量里，改一行换全站风格。</p></div>
-      <div class="card"><div class="ico">🚀</div><h3>四平台通用</h3><p>Vercel、Cloudflare、GitHub Pages、Docker 配置齐备。</p></div>
+      <article class="card">
+        <div class="tag">Android</div>
+        <h3>GuardShield 守护盾</h3>
+        <p>Android 终端防护项目，专注设备侧的安全防护能力建设。</p>
+        <div class="links">
+          <a href="https://github.com/5z3u/guardshield" target="_blank" rel="noopener">仓库</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="tag">部署</div>
+        <h3>Static Deployer</h3>
+        <p>静态站点与资源文件的部署实践，覆盖多种托管方案。</p>
+        <div class="links">
+          <a href="https://github.com/5z3u/static-deployer" target="_blank" rel="noopener">仓库</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="tag">建站</div>
+        <h3>Landing Site</h3>
+        <p>开箱即用的响应式落地站模板 —— 也就是你现在看到的这个页面。</p>
+        <div class="links">
+          <a href="https://github.com/5z3u/landing-site" target="_blank" rel="noopener">仓库</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="tag">展示</div>
+        <h3>Gallery Demo</h3>
+        <p>图片画廊展示站点，静态资源组织与排版示例。</p>
+        <div class="links">
+          <a href="https://github.com/5z3u/gallery-demo" target="_blank" rel="noopener">仓库</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="tag">网络</div>
+        <h3>API Probe</h3>
+        <p>网络探测工具，用于接口连通性与响应状况的检查。</p>
+        <div class="links">
+          <a href="https://github.com/5z3u/api-probe" target="_blank" rel="noopener">仓库</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="tag">起步</div>
+        <h3>My First Page</h3>
+        <p>第一个部署上线的静态页面，一切的起点。</p>
+        <div class="links">
+          <a href="https://github.com/5z3u/my-first-page" target="_blank" rel="noopener">仓库</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section id="showcase" class="sec alt">
+<section id="stack" class="sec alt">
   <div class="wrap">
-    <h2>部署后你会得到</h2>
-    <div class="grid two">
-      <div class="card"><h3>🔒 自动 HTTPS</h3><p>四个平台均自动签发证书，无需手动配置 SSL。</p></div>
-      <div class="card"><h3>🌍 全球加速</h3><p>CDN 边缘节点分发，国内海外访问都快。</p></div>
-      <div class="card"><h3>🔄 推送即更新</h3><p>关联 Git 仓库后，push 代码自动触发重新部署。</p></div>
-      <div class="card"><h3>🆓 零成本起步</h3><p>三个托管平台都有免费额度，个人项目足够用。</p></div>
+    <h2 class="sec-title">技术栈</h2>
+    <p class="sec-sub">偏好零依赖、快加载、能一键上线的方案。</p>
+    <div class="chips">
+      <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+      <span>GitHub Pages</span><span>Git</span><span>Docker</span>
+      <span>Nginx</span><span>Vercel</span><span>静态托管</span>
+      <span>响应式布局</span><span>Android</span><span>自动化部署</span>
     </div>
   </div>
 </section>
 
-<section id="deploy" class="sec">
-  <div class="wrap">
-    <h2>部署方式</h2>
-    <div class="grid two">
-      <div class="card mono"><h3>Vercel</h3><pre>npx vercel deploy --prod</pre></div>
-      <div class="card mono"><h3>Cloudflare Pages</h3><pre>npx wrangler pages deploy .</pre></div>
-      <div class="card mono"><h3>GitHub Pages</h3><pre>git push origin main</pre></div>
-      <div class="card mono"><h3>Docker</h3><pre>docker compose up -d</pre></div>
-    </div>
+<section id="about" class="sec">
+  <div class="wrap narrow">
+    <h2 class="sec-title">关于</h2>
+    <p>
+      我习惯把想法尽快做成能访问的东西 —— 从写第一行 HTML 到让它挂在一个真实域名上。
+      比起复杂框架，我更偏爱纯静态：加载快、成本低、几乎不会挂。
+    </p>
+    <p>
+      目前所有站点都托管在 GitHub Pages 上，通过自定义域名统一入口。
+      项目保持开源，欢迎随手看看，也欢迎提 issue 交流。
+    </p>
   </div>
 </section>
 
 <section id="contact" class="sec alt">
-  <div class="wrap center">
-    <h2>准备好上线了吗</h2>
-    <p>选一个平台，把这段命令粘贴进终端即可。</p>
-    <a class="btn primary" href="./">回到顶部</a>
+  <div class="wrap narrow center">
+    <h2 class="sec-title">联系</h2>
+    <p class="sec-sub">有想法、想合作，或者只是想聊聊部署那点事 —— 随时找我。</p>
+    <a class="btn primary big" href="https://github.com/5z3u" target="_blank" rel="noopener">前往 GitHub</a>
   </div>
 </section>
 
-<footer><div class="wrap"><p>© 2026 YourBrand · 由沙盒构建并通过本地验证</p></div></footer>
+<footer>
+  <div class="wrap">
+    <p>© <span id="year"></span> 5z3u · 由 GitHub Pages 托管</p>
+  </div>
+</footer>
+
 <script src="./assets/app.js"></script>
 </body>
 </html>
